@@ -9,6 +9,8 @@
   <img alt="Node 20+" src="https://img.shields.io/badge/Node-20%2B-15171A?style=flat-square&labelColor=15171A&color=2B2F35&logo=nodedotjs&logoColor=ECE8DF">
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-optional-15171A?style=flat-square&labelColor=15171A&color=E5322D">
   <img alt="UI PT / EN" src="https://img.shields.io/badge/UI-PT_%2F_EN-15171A?style=flat-square&labelColor=15171A&color=2B2F35">
+  <a href="https://github.com/MatheusChiodi/prompter-mchiodi/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/MatheusChiodi/prompter-mchiodi/ci.yml?branch=main&style=flat-square&label=CI&labelColor=15171A"></a>
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-15171A?style=flat-square&labelColor=15171A&color=2B2F35"></a>
 </p>
 
 <p align="center">
@@ -215,6 +217,14 @@ Deeper write-ups (in Portuguese):
 - [Analysis of existing voice teleprompters](docs/01-analise.md): what was kept, what was dropped, and why
 - [Architecture](docs/02-arquitetura.md) · [interactive flow diagram](docs/fluxo.html)
 - [Decisions and trade-offs](docs/03-decisoes.md): Web Speech vs local Whisper, and more
+
+## Contributing
+
+Issues and pull requests are welcome, in English or Portuguese. Read [CONTRIBUTING.md](CONTRIBUTING.md) and the [Code of Conduct](CODE_OF_CONDUCT.md). Report security problems privately, as described in [SECURITY.md](SECURITY.md). Changes are tracked in [CHANGELOG.md](CHANGELOG.md).
+
+## License
+
+[MIT](LICENSE) © 2026 Matheus Chiodi
 
 ## Credits
 

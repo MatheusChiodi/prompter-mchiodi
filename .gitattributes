@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+*.png binary
+*.ico binary
+package-lock.json linguist-generated=true
+docs/fluxo.html linguist-documentation
