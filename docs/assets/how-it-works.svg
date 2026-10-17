@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 640" role="img" aria-labelledby="how-title how-desc">
+  <title id="how-title">How Prompter MChiodi works</title>
+  <desc id="how-desc">Speech feeds a local matcher that moves the script cursor in real time, while a local Node backend calls the Claude Code CLI asynchronously for script preparation, re-anchoring and take review.</desc>
+  <defs>
+    <marker id="how-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#9B988F"/></marker>
+    <marker id="how-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#E5322D"/></marker>
+    <marker id="how-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto-start-reverse"><polygon points="0 0, 8 3, 0 6" fill="#2EC4D6"/></marker>
+    <style>
+      .n { font: 600 14px 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif; fill: #ECE8DF; }
+      .s { font: 10.5px ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace; fill: #9B988F; }
+      .t { font: 600 8.5px ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace; letter-spacing: 1px; fill: #9B988F; }
+      .l { font: 9px ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace; letter-spacing: 0.6px; fill: #9B988F; }
+      .z { font: 9.5px ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace; letter-spacing: 1.6px; fill: #9B988F; }
+    </style>
+  </defs>
+
+  <rect width="1040" height="640" fill="#15171A"/>
+
+  <rect x="24" y="64" width="544" height="496" rx="8" fill="none" stroke="#2B2F35" stroke-dasharray="4,4"/>
+  <text class="z" x="40" y="88">BROWSER · REACT + VITE</text>
+  <rect x="608" y="64" width="408" height="496" rx="8" fill="none" stroke="#2B2F35" stroke-dasharray="4,4"/>
+  <text class="z" x="624" y="88">YOUR MACHINE · NODE</text>
+
+  <!-- connectors -->
+  <line x1="248" y1="144" x2="334" y2="144" stroke="#9B988F" stroke-width="1.25" marker-end="url(#how-arrow)"/>
+  <rect x="264" y="120" width="56" height="14" fill="#15171A"/>
+  <text class="l" x="292" y="130" text-anchor="middle">MARKDOWN</text>
+
+  <line x1="436" y1="176" x2="436" y2="270" stroke="#9B988F" stroke-width="1.25" marker-end="url(#how-arrow)"/>
+  <rect x="446" y="216" width="40" height="14" fill="#15171A"/>
+  <text class="l" x="466" y="226" text-anchor="middle">WORDS</text>
+
+  <line x1="248" y1="304" x2="334" y2="304" stroke="#9B988F" stroke-width="1.25" marker-end="url(#how-arrow)"/>
+  <rect x="270" y="280" width="44" height="14" fill="#15171A"/>
+  <text class="l" x="292" y="290" text-anchor="middle">SPEECH</text>
+
+  <line x1="469" y1="336" x2="469" y2="430" stroke="#E5322D" stroke-width="1.5" marker-end="url(#how-accent)"/>
+  <rect x="479" y="376" width="48" height="14" fill="#15171A"/>
+  <text class="l" x="503" y="386" text-anchor="middle" style="fill:#E5322D">CURSOR</text>
+
+  <path d="M403 336 V392 Q403 400 395 400 H156 Q148 400 148 408 V430" fill="none" stroke="#9B988F" stroke-width="1.25" marker-end="url(#how-arrow)"/>
+  <rect x="260" y="376" width="32" height="14" fill="#15171A"/>
+  <text class="l" x="276" y="386" text-anchor="middle">HITS</text>
+
+  <path d="M538 160 H580 Q588 160 588 168 V200 Q588 208 596 208 H739 Q747 208 747 216 V270" fill="none" stroke="#2EC4D6" stroke-width="1.25" stroke-dasharray="5,4" marker-start="url(#how-link)" marker-end="url(#how-link)"/>
+  <rect x="634" y="184" width="68" height="14" fill="#15171A"/>
+  <text class="l" x="668" y="194" text-anchor="middle">PREPROCESS</text>
+
+  <line x1="538" y1="304" x2="678" y2="304" stroke="#2EC4D6" stroke-width="1.25" stroke-dasharray="5,4" marker-start="url(#how-link)" marker-end="url(#how-link)"/>
+  <rect x="582" y="280" width="50" height="14" fill="#15171A"/>
+  <text class="l" x="607" y="290" text-anchor="middle">REANCHOR</text>
+
+  <line x1="813" y1="270" x2="813" y2="178" stroke="#2EC4D6" stroke-width="1.25" marker-start="url(#how-link)" marker-end="url(#how-link)"/>
+  <rect x="823" y="217" width="76" height="14" fill="#15171A"/>
+  <text class="l" x="861" y="227" text-anchor="middle">STDIN · JSON</text>
+
+  <line x1="780" y1="336" x2="780" y2="430" stroke="#9B988F" stroke-width="1.25" marker-end="url(#how-arrow)"/>
+  <rect x="790" y="376" width="46" height="14" fill="#15171A"/>
+  <text class="l" x="813" y="386" text-anchor="middle">SHA-256</text>
+
+  <path d="M148 496 V536 Q148 544 156 544 H912 Q920 544 920 536 V312 Q920 304 912 304 H882" fill="none" stroke="#2EC4D6" stroke-width="1.25" stroke-dasharray="5,4" marker-end="url(#how-link)"/>
+  <rect x="540" y="520" width="44" height="14" fill="#15171A"/>
+  <text class="l" x="562" y="530" text-anchor="middle">REVIEW</text>
+
+  <!-- nodes -->
+  <g>
+    <rect x="48" y="112" width="200" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text class="t" x="60" y="128">INPUT</text>
+    <text class="n" x="60" y="148">Script .md</text>
+    <text class="s" x="60" y="164">drop · watched folder</text>
+  </g>
+  <g>
+    <rect x="336" y="112" width="200" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text class="t" x="348" y="128">PARSER</text>
+    <text class="n" x="348" y="148">Local parser</text>
+    <text class="s" x="348" y="164">cues · sections · aliases</text>
+  </g>
+  <g>
+    <rect x="48" y="272" width="200" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text class="t" x="60" y="288">INPUT</text>
+    <text class="n" x="60" y="308">Mic + Web Speech</text>
+    <text class="s" x="60" y="324">pt-BR · interim/final</text>
+  </g>
+  <g>
+    <rect x="336" y="272" width="200" height="64" rx="6" fill="#2A1A19" stroke="#E5322D" stroke-width="1.5"/>
+    <text class="t" x="348" y="288" style="fill:#E5322D">REAL TIME</text>
+    <text class="n" x="348" y="308">Local matcher</text>
+    <text class="s" x="348" y="324">lookahead 20 · bigram</text>
+  </g>
+  <g>
+    <rect x="48" y="432" width="200" height="64" rx="6" fill="#1C1F23" stroke="#4A4D52"/>
+    <text class="t" x="60" y="448">STATE</text>
+    <text class="n" x="60" y="468">Session log</text>
+    <text class="s" x="60" y="484">hits · ad-libs</text>
+  </g>
+  <g>
+    <rect x="336" y="432" width="200" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text class="t" x="348" y="448">UI</text>
+    <text class="n" x="348" y="468">Prompter view</text>
+    <text class="s" x="348" y="484">highlight · rAF scroll</text>
+  </g>
+  <g>
+    <rect x="680" y="112" width="200" height="64" rx="6" fill="#1C1F23" stroke="#2EC4D6" stroke-dasharray="4,3"/>
+    <text class="t" x="692" y="128">EXTERNAL CLI</text>
+    <text class="n" x="692" y="148">claude -p</text>
+    <text class="s" x="692" y="164">subscription login · json</text>
+  </g>
+  <g>
+    <rect x="680" y="272" width="200" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text class="t" x="692" y="288">API</text>
+    <text class="n" x="692" y="308">Node backend</text>
+    <text class="s" x="692" y="324">127.0.0.1:5179</text>
+  </g>
+  <g>
+    <rect x="680" y="432" width="200" height="64" rx="6" fill="#1C1F23" stroke="#4A4D52"/>
+    <text class="t" x="692" y="448">STATE</text>
+    <text class="n" x="692" y="468">Cache</text>
+    <text class="s" x="692" y="484">.cache/preprocess</text>
+  </g>
+
+  <!-- legend -->
+  <line x1="24" y1="584" x2="1016" y2="584" stroke="#2B2F35"/>
+  <rect x="24" y="604" width="16" height="12" rx="2" fill="#2A1A19" stroke="#E5322D" stroke-width="1.5"/>
+  <text class="l" x="48" y="614">REAL-TIME LOOP · NEVER WAITS ON CLAUDE</text>
+  <line x1="340" y1="610" x2="372" y2="610" stroke="#2EC4D6" stroke-width="1.25" stroke-dasharray="5,4"/>
+  <text class="l" x="380" y="614">ASYNC HTTP · OPTIONAL</text>
+  <rect x="580" y="604" width="16" height="12" rx="2" fill="#1C1F23" stroke="#4A4D52"/>
+  <text class="l" x="604" y="614">STATE / STORAGE</text>
+  <rect x="780" y="604" width="16" height="12" rx="2" fill="#1C1F23" stroke="#2EC4D6" stroke-dasharray="4,3"/>
+  <text class="l" x="804" y="614">EXTERNAL PROCESS</text>
+</svg>

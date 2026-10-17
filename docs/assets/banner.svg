@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-labelledby="banner-title banner-desc">
+  <title id="banner-title">Prompter MChiodi</title>
+  <desc id="banner-desc">A clapperboard-styled banner with a mock teleprompter that highlights the word being read and shows production cues.</desc>
+  <defs>
+    <pattern id="banner-st" width="44" height="44" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="44" height="44" fill="#15171A"/>
+      <rect width="22" height="44" fill="#ECE8DF"/>
+    </pattern>
+    <style>
+      .d { font-family: Bahnschrift, 'Arial Narrow', 'Roboto Condensed', 'Helvetica Neue', sans-serif; font-stretch: condensed; font-weight: 800; letter-spacing: -1px; }
+      .r { font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+      .m { font-family: ui-monospace, 'Cascadia Mono', Consolas, 'SF Mono', Menlo, monospace; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="440" fill="#15171A"/>
+
+  <!-- clapper stick -->
+  <g transform="rotate(-2 40 92)">
+    <rect x="40" y="40" width="1120" height="52" fill="url(#banner-st)" stroke="#ECE8DF" stroke-width="2"/>
+  </g>
+  <rect x="40" y="100" width="1120" height="16" fill="url(#banner-st)" stroke="#ECE8DF" stroke-width="2"/>
+  <rect x="40" y="116" width="1120" height="292" fill="#1C1F23" stroke="#ECE8DF" stroke-width="2"/>
+  <line x1="640" y1="116" x2="640" y2="408" stroke="#ECE8DF" stroke-width="2"/>
+
+  <!-- title -->
+  <text class="d" x="72" y="222" font-size="104" fill="#ECE8DF">PROMPTER</text>
+  <text class="d" x="72" y="318" font-size="104" fill="#9B988F">MCHIODI</text>
+  <text class="r" x="74" y="360" font-size="17" fill="#ECE8DF">A teleprompter that follows your voice, word by word.</text>
+  <text class="m" x="74" y="386" font-size="12" fill="#9B988F" letter-spacing="1.5">PT-BR · MARKDOWN SCRIPTS · CLAUDE CODE ASSISTED</text>
+
+  <!-- prompter mock -->
+  <rect x="680" y="138" width="96" height="24" rx="2" fill="#E5322D"/>
+  <circle cx="694" cy="150" r="4" fill="#FFFFFF"/>
+  <text class="m" x="705" y="154" font-size="11" font-weight="600" fill="#FFFFFF" letter-spacing="1.5">ON AIR</text>
+  <text class="m" x="1068" y="155" font-size="15" fill="#ECE8DF" letter-spacing="2" text-anchor="end">01:24</text>
+  <rect x="1084" y="138" width="56" height="24" rx="2" fill="none" stroke="#2B2F35"/>
+  <text class="m" x="1112" y="154" font-size="10" fill="#ECE8DF" text-anchor="middle">TAKE 03</text>
+
+  <text class="r" x="680" y="206" font-size="22" fill="#4A4D52">Fala, pessoal! Hoje eu vou mostrar</text>
+  <text class="r" x="680" y="246" font-size="22" fill="#4A4D52">como fazer o</text>
+  <rect x="818" y="225" width="78" height="30" rx="3" fill="#ECE8DF"/>
+  <text class="r" x="825" y="246" font-size="22" fill="#15171A">deploy</text>
+  <text class="r" x="904" y="246" font-size="22" fill="#ECE8DF">de uma aplicação</text>
+  <text class="r" x="680" y="286" font-size="22" fill="#ECE8DF">React no Kubernetes, do zero.</text>
+  <rect x="680" y="304" width="62" height="20" rx="2" fill="#E5322D"/>
+  <text class="m" x="711" y="318" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">CORTE</text>
+  <rect x="752" y="304" width="160" height="20" rx="2" fill="#2EC4D6"/>
+  <text class="m" x="832" y="318" font-size="11" font-weight="600" fill="#15171A" text-anchor="middle" letter-spacing="1">B-ROLL: TERMINAL</text>
+
+  <!-- reading line -->
+  <line x1="664" y1="262" x2="1158" y2="262" stroke="#E5322D" stroke-opacity="0.6" stroke-width="2"/>
+  <polygon points="664,254 676,262 664,270" fill="#E5322D"/>
+
+  <!-- section track -->
+  <rect x="680" y="372" width="140" height="4" fill="#ECE8DF"/>
+  <rect x="824" y="372" width="180" height="4" fill="#2B2F35"/>
+  <rect x="824" y="372" width="62" height="4" fill="#ECE8DF"/>
+  <rect x="1008" y="372" width="132" height="4" fill="#2B2F35"/>
+  <text class="m" x="680" y="394" font-size="10" fill="#9B988F" letter-spacing="1">WORD 23/95 · ≈ 00:38 LEFT</text>
+</svg>

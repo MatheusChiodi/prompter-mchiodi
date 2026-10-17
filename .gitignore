@@ -1,0 +1,61 @@
+# ---------- dependências e build ----------
+node_modules/
+dist/
+*.tsbuildinfo
+.vite/
+coverage/
+
+# ---------- dados pessoais ----------
+# roteiros: só o exemplo vai para o git
+roteiros/*
+!roteiros/exemplo.md
+# cache do pré-processamento (contém o texto dos seus roteiros)
+.cache/
+# gravações, transcrições e exports
+*.wav
+*.mp3
+*.m4a
+*.webm
+*.mp4
+transcri*/
+takes/
+exports/
+
+# ---------- segredos ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+
+# ---------- ferramentas de IA / agentes locais ----------
+.claude/
+CLAUDE.local.md
+.memory-team
+.diagram-design
+.mcp.json
+
+# ---------- editores e sistema ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ---------- logs e temporários ----------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tmp
+*.temp
+.tmp/

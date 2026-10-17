@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" role="img" aria-labelledby="states-title states-desc">
+  <title id="states-title">Prompter modes</title>
+  <desc id="states-desc">The prompter moves between mic off, on air, silence, paused and off script; staying off script can ask Claude for the current position.</desc>
+  <defs>
+    <marker id="states-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#9B988F"/></marker>
+    <marker id="states-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#2EC4D6"/></marker>
+    <style>
+      .n { font: 600 14px 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif; fill: #ECE8DF; }
+      .s { font: 10.5px ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace; fill: #9B988F; }
+      .l { font: 9px ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace; letter-spacing: 0.6px; fill: #9B988F; }
+    </style>
+  </defs>
+
+  <rect width="960" height="480" fill="#15171A"/>
+
+  <!-- transitions -->
+  <line x1="260" y1="220" x2="358" y2="220" stroke="#9B988F" stroke-width="1.25" marker-end="url(#states-arrow)"/>
+  <rect x="280" y="196" width="40" height="14" fill="#15171A"/>
+  <text class="l" x="300" y="206" text-anchor="middle">ENTER</text>
+
+  <line x1="360" y1="244" x2="262" y2="244" stroke="#9B988F" stroke-width="1.25" marker-end="url(#states-arrow)"/>
+  <rect x="276" y="254" width="48" height="14" fill="#15171A"/>
+  <text class="l" x="300" y="264" text-anchor="middle">MIC OFF</text>
+
+  <line x1="410" y1="200" x2="410" y2="122" stroke="#9B988F" stroke-width="1.25" marker-end="url(#states-arrow)"/>
+  <rect x="330" y="153" width="72" height="14" fill="#15171A"/>
+  <text class="l" x="366" y="163" text-anchor="middle">1.5 S QUIET</text>
+
+  <line x1="470" y1="120" x2="470" y2="198" stroke="#9B988F" stroke-width="1.25" marker-end="url(#states-arrow)"/>
+  <rect x="480" y="153" width="44" height="14" fill="#15171A"/>
+  <text class="l" x="502" y="163" text-anchor="middle">SPEECH</text>
+
+  <line x1="410" y1="264" x2="410" y2="342" stroke="#9B988F" stroke-width="1.25" marker-end="url(#states-arrow)"/>
+  <rect x="358" y="297" width="44" height="14" fill="#15171A"/>
+  <text class="l" x="380" y="307" text-anchor="middle">SPACE</text>
+
+  <line x1="470" y1="344" x2="470" y2="266" stroke="#9B988F" stroke-width="1.25" marker-end="url(#states-arrow)"/>
+  <rect x="480" y="297" width="40" height="14" fill="#15171A"/>
+  <text class="l" x="500" y="307" text-anchor="middle">SPACE</text>
+
+  <line x1="560" y1="220" x2="698" y2="220" stroke="#9B988F" stroke-width="1.25" marker-end="url(#states-arrow)"/>
+  <rect x="590" y="196" width="78" height="14" fill="#15171A"/>
+  <text class="l" x="629" y="206" text-anchor="middle">NO MATCH 6 S</text>
+
+  <line x1="700" y1="244" x2="562" y2="244" stroke="#9B988F" stroke-width="1.25" marker-end="url(#states-arrow)"/>
+  <rect x="590" y="254" width="78" height="14" fill="#15171A"/>
+  <text class="l" x="629" y="264" text-anchor="middle">BACK ON TEXT</text>
+
+  <line x1="800" y1="200" x2="800" y2="122" stroke="#2EC4D6" stroke-width="1.25" stroke-dasharray="5,4" marker-end="url(#states-link)"/>
+  <rect x="810" y="153" width="28" height="14" fill="#15171A"/>
+  <text class="l" x="824" y="163" text-anchor="middle">ASK</text>
+
+  <path d="M700 88 H556 Q548 88 548 96 V198" fill="none" stroke="#2EC4D6" stroke-width="1.25" stroke-dasharray="5,4" marker-end="url(#states-link)"/>
+  <rect x="600" y="64" width="40" height="14" fill="#15171A"/>
+  <text class="l" x="620" y="74" text-anchor="middle">INDEX</text>
+
+  <!-- states -->
+  <g>
+    <rect x="60" y="200" width="200" height="64" rx="6" fill="#1C1F23" stroke="#4A4D52"/>
+    <circle cx="80" cy="232" r="5" fill="#4A4D52"/>
+    <text class="n" x="94" y="228">Mic off</text>
+    <text class="s" x="94" y="246">nothing heard</text>
+  </g>
+  <g>
+    <rect x="360" y="200" width="200" height="64" rx="6" fill="#2A1A19" stroke="#E5322D" stroke-width="1.5"/>
+    <circle cx="380" cy="232" r="5" fill="#E5322D"/>
+    <text class="n" x="394" y="228">On air</text>
+    <text class="s" x="394" y="246">cursor follows voice</text>
+  </g>
+  <g>
+    <rect x="340" y="56" width="200" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <circle cx="360" cy="88" r="5" fill="#2EC4D6"/>
+    <text class="n" x="374" y="84">Silence</text>
+    <text class="s" x="374" y="102">cursor holds still</text>
+  </g>
+  <g>
+    <rect x="340" y="344" width="200" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <circle cx="360" cy="376" r="5" fill="#E4D23A"/>
+    <text class="n" x="374" y="372">Paused</text>
+    <text class="s" x="374" y="390">speech ignored</text>
+  </g>
+  <g>
+    <rect x="700" y="200" width="200" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <circle cx="720" cy="232" r="5" fill="#C64BD6"/>
+    <text class="n" x="734" y="228">Off script</text>
+    <text class="s" x="734" y="246">ad-lib, cursor waits</text>
+  </g>
+  <g>
+    <rect x="700" y="56" width="200" height="64" rx="6" fill="#1C1F23" stroke="#2EC4D6" stroke-dasharray="4,3"/>
+    <text class="n" x="716" y="84">Claude re-anchor</text>
+    <text class="s" x="716" y="102">optional · async</text>
+  </g>
+
+  <!-- legend -->
+  <line x1="24" y1="436" x2="936" y2="436" stroke="#2B2F35"/>
+  <rect x="24" y="450" width="16" height="12" rx="2" fill="#2A1A19" stroke="#E5322D" stroke-width="1.5"/>
+  <text class="l" x="48" y="460">VOICE MOVES THE CURSOR ONLY HERE</text>
+  <line x1="340" y1="456" x2="372" y2="456" stroke="#2EC4D6" stroke-width="1.25" stroke-dasharray="5,4"/>
+  <text class="l" x="380" y="460">CLAUDE CODE CLI · SKIPPED WHEN UNAVAILABLE</text>
+  <circle cx="700" cy="456" r="5" fill="#9B988F"/>
+  <text class="l" x="712" y="460">DOT = TALLY COLOR IN THE APP</text>
+</svg>

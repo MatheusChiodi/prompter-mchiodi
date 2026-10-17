@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 790" role="img" aria-labelledby="matcher-title matcher-desc">
+  <title id="matcher-title">What happens to each spoken word</title>
+  <desc id="matcher-desc">Each recognized word first tries a near match, then a confirmed far match, then counts as a miss; four misses trigger a global re-anchor, and staying lost asks Claude asynchronously.</desc>
+  <defs>
+    <marker id="matcher-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#9B988F"/></marker>
+    <marker id="matcher-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#2EC4D6"/></marker>
+    <style>
+      .n { font: 600 14px 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif; fill: #ECE8DF; }
+      .s { font: 10.5px ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace; fill: #9B988F; }
+      .t { font: 600 8.5px ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace; letter-spacing: 1px; fill: #9B988F; }
+      .l { font: 9px ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace; letter-spacing: 0.6px; fill: #9B988F; }
+      .c { font: italic 14px Georgia, 'Times New Roman', serif; fill: #ECE8DF; }
+    </style>
+  </defs>
+
+  <rect width="960" height="790" fill="#15171A"/>
+
+  <!-- annotation -->
+  <text class="c" x="520" y="84">A “match” accepts, in order:</text>
+  <text class="s" x="520" y="106">exact · phonetic key · 1–2 edits</text>
+  <text class="s" x="520" y="122">2–3 spoken words glued · alias</text>
+  <line x1="520" y1="136" x2="760" y2="136" stroke="#2B2F35"/>
+
+  <!-- connectors -->
+  <line x1="190" y1="128" x2="190" y2="182" stroke="#9B988F" stroke-width="1.25" marker-end="url(#matcher-arrow)"/>
+
+  <line x1="300" y1="205" x2="518" y2="205" stroke="#9B988F" stroke-width="1.25" marker-end="url(#matcher-arrow)"/>
+  <rect x="394" y="181" width="30" height="14" fill="#15171A"/>
+  <text class="l" x="409" y="191" text-anchor="middle">YES</text>
+
+  <line x1="190" y1="248" x2="190" y2="302" stroke="#9B988F" stroke-width="1.25" marker-end="url(#matcher-arrow)"/>
+  <rect x="200" y="268" width="22" height="14" fill="#15171A"/>
+  <text class="l" x="211" y="278" text-anchor="middle">NO</text>
+
+  <path d="M300 336 H392 Q400 336 400 328 V235 Q400 227 408 227 H518" fill="none" stroke="#9B988F" stroke-width="1.25" marker-end="url(#matcher-arrow)"/>
+  <rect x="410" y="274" width="30" height="14" fill="#15171A"/>
+  <text class="l" x="425" y="284" text-anchor="middle">YES</text>
+
+  <line x1="190" y1="368" x2="190" y2="422" stroke="#9B988F" stroke-width="1.25" marker-end="url(#matcher-arrow)"/>
+  <rect x="200" y="388" width="22" height="14" fill="#15171A"/>
+  <text class="l" x="211" y="398" text-anchor="middle">NO</text>
+
+  <line x1="300" y1="456" x2="518" y2="456" stroke="#9B988F" stroke-width="1.25" marker-end="url(#matcher-arrow)"/>
+  <rect x="394" y="432" width="30" height="14" fill="#15171A"/>
+  <text class="l" x="409" y="442" text-anchor="middle">YES</text>
+
+  <line x1="190" y1="488" x2="190" y2="542" stroke="#9B988F" stroke-width="1.25" marker-end="url(#matcher-arrow)"/>
+  <rect x="200" y="508" width="22" height="14" fill="#15171A"/>
+  <text class="l" x="211" y="518" text-anchor="middle">NO</text>
+
+  <line x1="640" y1="424" x2="640" y2="250" stroke="#9B988F" stroke-width="1.25" marker-end="url(#matcher-arrow)"/>
+  <rect x="650" y="330" width="40" height="14" fill="#15171A"/>
+  <text class="l" x="670" y="340" text-anchor="middle">FOUND</text>
+
+  <path d="M640 488 V568 Q640 576 632 576 H302" fill="none" stroke="#9B988F" stroke-width="1.25" marker-end="url(#matcher-arrow)"/>
+  <rect x="440" y="552" width="34" height="14" fill="#15171A"/>
+  <text class="l" x="457" y="562" text-anchor="middle">NONE</text>
+
+  <line x1="190" y1="608" x2="190" y2="662" stroke="#2EC4D6" stroke-width="1.25" stroke-dasharray="5,4" marker-end="url(#matcher-link)"/>
+  <rect x="200" y="628" width="64" height="14" fill="#15171A"/>
+  <text class="l" x="232" y="638" text-anchor="middle">LOST &gt; 6 S</text>
+
+  <path d="M300 696 H872 Q880 696 880 688 V224 Q880 216 872 216 H762" fill="none" stroke="#2EC4D6" stroke-width="1.25" stroke-dasharray="5,4" marker-end="url(#matcher-link)"/>
+  <rect x="558" y="672" width="80" height="14" fill="#15171A"/>
+  <text class="l" x="598" y="682" text-anchor="middle">INDEX · ≥ 0.55</text>
+
+  <!-- nodes -->
+  <g>
+    <rect x="80" y="64" width="220" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text class="t" x="92" y="80">INPUT</text>
+    <text class="n" x="92" y="100">Spoken word</text>
+    <text class="s" x="92" y="116">no accents · phonetic key</text>
+  </g>
+  <g>
+    <rect x="80" y="184" width="220" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text class="t" x="92" y="200">DECISION</text>
+    <text class="n" x="92" y="220">Near match?</text>
+    <text class="s" x="92" y="236">cursor … cursor + 2</text>
+  </g>
+  <g>
+    <rect x="80" y="304" width="220" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text class="t" x="92" y="320">DECISION</text>
+    <text class="n" x="92" y="340">Far match, confirmed?</text>
+    <text class="s" x="92" y="356">≤ 20 ahead · prev/next word</text>
+  </g>
+  <g>
+    <rect x="80" y="424" width="220" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text class="t" x="92" y="440">DECISION</text>
+    <text class="n" x="92" y="460">4 misses in a row?</text>
+    <text class="s" x="92" y="476">miss streak</text>
+  </g>
+  <g>
+    <rect x="80" y="544" width="220" height="64" rx="6" fill="#1C1F23" stroke="#4A4D52"/>
+    <text class="t" x="92" y="560">STATE</text>
+    <text class="n" x="92" y="580">Hold position</text>
+    <text class="s" x="92" y="596">ad-lib or STT noise</text>
+  </g>
+  <g>
+    <rect x="80" y="664" width="220" height="64" rx="6" fill="#1C1F23" stroke="#2EC4D6" stroke-dasharray="4,3"/>
+    <text class="t" x="92" y="680" style="fill:#2EC4D6">ASYNC · OPTIONAL</text>
+    <text class="n" x="92" y="700">Claude re-anchor</text>
+    <text class="s" x="92" y="716">claude -p · haiku</text>
+  </g>
+  <g>
+    <rect x="520" y="184" width="240" height="64" rx="6" fill="#2A1A19" stroke="#E5322D" stroke-width="1.5"/>
+    <text class="t" x="532" y="200" style="fill:#E5322D">RESULT</text>
+    <text class="n" x="532" y="220">Advance cursor</text>
+    <text class="s" x="532" y="236">cursor = match + 1</text>
+  </g>
+  <g>
+    <rect x="520" y="424" width="240" height="64" rx="6" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text class="t" x="532" y="440">SEARCH</text>
+    <text class="n" x="532" y="460">Global re-anchor</text>
+    <text class="s" x="532" y="476">last 7 words · nearest wins</text>
+  </g>
+
+  <!-- legend -->
+  <line x1="24" y1="752" x2="936" y2="752" stroke="#2B2F35"/>
+  <rect x="24" y="766" width="16" height="12" rx="2" fill="#2A1A19" stroke="#E5322D" stroke-width="1.5"/>
+  <text class="l" x="48" y="776">WHERE THE CURSOR MOVES</text>
+  <line x1="260" y1="772" x2="292" y2="772" stroke="#9B988F" stroke-width="1.25"/>
+  <text class="l" x="300" y="776">LOCAL · EVERY WORD</text>
+  <line x1="480" y1="772" x2="512" y2="772" stroke="#2EC4D6" stroke-width="1.25" stroke-dasharray="5,4"/>
+  <text class="l" x="520" y="776">ASYNC · SECONDS · DISCARDED IF STALE</text>
+</svg>

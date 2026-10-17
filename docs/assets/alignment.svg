@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" role="img" aria-labelledby="align-title align-desc">
+  <title id="align-title">Matching what the STT heard to the script</title>
+  <desc id="align-desc">Brazilian speech recognition writes English tech terms phonetically; the matcher still aligns them to the script through exact, phonetic and concatenated matches.</desc>
+  <defs>
+    <marker id="align-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4A4D52"/></marker>
+    <marker id="align-ph" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#E4D23A"/></marker>
+    <marker id="align-cat" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#C64BD6"/></marker>
+    <style>
+      .k { font: 14px ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace; }
+      .l { font: 9px ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace; letter-spacing: 0.6px; fill: #9B988F; }
+      .h { font: 600 10px ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace; letter-spacing: 1.6px; fill: #9B988F; }
+    </style>
+  </defs>
+
+  <rect width="820" height="440" fill="#15171A"/>
+
+  <text class="h" x="60" y="92">HEARD · WEB SPEECH PT-BR</text>
+  <text class="h" x="60" y="364">SCRIPT · WHAT YOU WROTE</text>
+
+  <!-- links (drawn before boxes) -->
+  <line x1="80" y1="146" x2="80" y2="288" stroke="#4A4D52" stroke-width="1.25" marker-end="url(#align-arrow)"/>
+  <line x1="154" y1="146" x2="154" y2="288" stroke="#E4D23A" stroke-width="1.5" marker-end="url(#align-ph)"/>
+  <rect x="160" y="207" width="44" height="14" fill="#15171A"/>
+  <text class="l" x="182" y="217" text-anchor="middle" style="fill:#E4D23A">SOUND</text>
+  <line x1="230" y1="146" x2="230" y2="288" stroke="#4A4D52" stroke-width="1.25" marker-end="url(#align-arrow)"/>
+  <line x1="302" y1="146" x2="302" y2="288" stroke="#E4D23A" stroke-width="1.5" marker-end="url(#align-ph)"/>
+  <rect x="308" y="207" width="44" height="14" fill="#15171A"/>
+  <text class="l" x="330" y="217" text-anchor="middle" style="fill:#E4D23A">SOUND</text>
+  <line x1="374" y1="146" x2="374" y2="288" stroke="#4A4D52" stroke-width="1.25" marker-end="url(#align-arrow)"/>
+  <line x1="466" y1="146" x2="466" y2="288" stroke="#E4D23A" stroke-width="1.5" marker-end="url(#align-ph)"/>
+  <rect x="472" y="207" width="44" height="14" fill="#15171A"/>
+  <text class="l" x="494" y="217" text-anchor="middle" style="fill:#E4D23A">SOUND</text>
+  <line x1="562" y1="146" x2="562" y2="288" stroke="#4A4D52" stroke-width="1.25" marker-end="url(#align-arrow)"/>
+  <path d="M630 146 V210 Q630 218 638 218 H698 Q706 218 706 210 V146" fill="none" stroke="#C64BD6" stroke-width="1.5"/>
+  <line x1="674" y1="218" x2="674" y2="288" stroke="#C64BD6" stroke-width="1.5" marker-end="url(#align-cat)"/>
+  <rect x="682" y="244" width="48" height="14" fill="#15171A"/>
+  <text class="l" x="706" y="254" text-anchor="middle" style="fill:#C64BD6">GLUED</text>
+
+  <!-- heard -->
+  <g class="k">
+    <rect x="60" y="110" width="40" height="36" rx="4" fill="#1C1F23" stroke="#2B2F35"/>
+    <text x="80" y="133" text-anchor="middle" fill="#9B988F">o</text>
+    <rect x="116" y="110" width="76" height="36" rx="4" fill="#1C1F23" stroke="#2B2F35"/>
+    <text x="154" y="133" text-anchor="middle" fill="#ECE8DF">deploi</text>
+    <rect x="208" y="110" width="44" height="36" rx="4" fill="#1C1F23" stroke="#2B2F35"/>
+    <text x="230" y="133" text-anchor="middle" fill="#9B988F">do</text>
+    <rect x="268" y="110" width="68" height="36" rx="4" fill="#1C1F23" stroke="#2B2F35"/>
+    <text x="302" y="133" text-anchor="middle" fill="#ECE8DF">riact</text>
+    <rect x="352" y="110" width="44" height="36" rx="4" fill="#1C1F23" stroke="#2B2F35"/>
+    <text x="374" y="133" text-anchor="middle" fill="#9B988F">no</text>
+    <rect x="412" y="110" width="108" height="36" rx="4" fill="#1C1F23" stroke="#2B2F35"/>
+    <text x="466" y="133" text-anchor="middle" fill="#ECE8DF">cubernetis</text>
+    <rect x="536" y="110" width="52" height="36" rx="4" fill="#1C1F23" stroke="#2B2F35"/>
+    <text x="562" y="133" text-anchor="middle" fill="#9B988F">com</text>
+    <rect x="604" y="110" width="52" height="36" rx="4" fill="#1C1F23" stroke="#2B2F35"/>
+    <text x="630" y="133" text-anchor="middle" fill="#ECE8DF">use</text>
+    <rect x="668" y="110" width="76" height="36" rx="4" fill="#1C1F23" stroke="#2B2F35"/>
+    <text x="706" y="133" text-anchor="middle" fill="#ECE8DF">effect</text>
+  </g>
+
+  <!-- script -->
+  <g class="k">
+    <rect x="60" y="290" width="40" height="36" rx="4" fill="#1C1F23" stroke="#4A4D52"/>
+    <text x="80" y="313" text-anchor="middle" fill="#9B988F">o</text>
+    <rect x="116" y="290" width="76" height="36" rx="4" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text x="154" y="313" text-anchor="middle" fill="#ECE8DF">deploy</text>
+    <rect x="208" y="290" width="44" height="36" rx="4" fill="#1C1F23" stroke="#4A4D52"/>
+    <text x="230" y="313" text-anchor="middle" fill="#9B988F">do</text>
+    <rect x="268" y="290" width="68" height="36" rx="4" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text x="302" y="313" text-anchor="middle" fill="#ECE8DF">React</text>
+    <rect x="352" y="290" width="44" height="36" rx="4" fill="#1C1F23" stroke="#4A4D52"/>
+    <text x="374" y="313" text-anchor="middle" fill="#9B988F">no</text>
+    <rect x="412" y="290" width="108" height="36" rx="4" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text x="466" y="313" text-anchor="middle" fill="#ECE8DF">Kubernetes</text>
+    <rect x="536" y="290" width="52" height="36" rx="4" fill="#1C1F23" stroke="#4A4D52"/>
+    <text x="562" y="313" text-anchor="middle" fill="#9B988F">com</text>
+    <rect x="624" y="290" width="100" height="36" rx="4" fill="#1C1F23" stroke="#ECE8DF"/>
+    <text x="674" y="313" text-anchor="middle" fill="#ECE8DF">useEffect</text>
+  </g>
+
+  <!-- cursor -->
+  <rect x="736" y="284" width="4" height="48" fill="#E5322D"/>
+  <text class="l" x="748" y="312" style="fill:#E5322D">CURSOR</text>
+
+  <!-- legend -->
+  <line x1="24" y1="392" x2="796" y2="392" stroke="#2B2F35"/>
+  <line x1="24" y1="414" x2="56" y2="414" stroke="#4A4D52" stroke-width="1.5"/>
+  <text class="l" x="64" y="418">EXACT</text>
+  <line x1="132" y1="414" x2="164" y2="414" stroke="#E4D23A" stroke-width="1.5"/>
+  <text class="l" x="172" y="418">SOUND-ALIKE (PHONETIC KEY · ALIAS · 1–2 EDITS)</text>
+  <line x1="520" y1="414" x2="552" y2="414" stroke="#C64BD6" stroke-width="1.5"/>
+  <text class="l" x="560" y="418">SPOKEN WORDS GLUED INTO ONE TOKEN</text>
+</svg>
