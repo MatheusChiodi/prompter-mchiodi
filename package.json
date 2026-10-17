@@ -1,7 +1,29 @@
 {
   "name": "prompter-mchiodi",
+  "version": "0.1.0",
+  "description": "Voice-driven teleprompter for pt-BR tech creators, with Markdown scripts and optional Claude Code CLI assist.",
   "private": true,
   "type": "module",
+  "license": "MIT",
+  "author": "Matheus Chiodi (https://github.com/MatheusChiodi)",
+  "homepage": "https://github.com/MatheusChiodi/prompter-mchiodi#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusChiodi/prompter-mchiodi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MatheusChiodi/prompter-mchiodi/issues"
+  },
+  "keywords": [
+    "teleprompter",
+    "speech-recognition",
+    "web-speech-api",
+    "pt-br",
+    "claude-code"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "workspaces": [
     "server",
     "web"

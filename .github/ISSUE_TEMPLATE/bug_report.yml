@@ -1,0 +1,47 @@
+name: Bug report
+description: Something doesn't work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting! Issues in Portuguese are welcome too.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open script ...
+        2. Read the sentence ...
+        3. The cursor ...
+    validations:
+      required: true
+  - type: textarea
+    id: script
+    attributes:
+      label: Script excerpt and what the recognizer heard
+      description: For cursor/matching bugs, paste the script lines and the text shown in the bottom bar of the prompter.
+      render: markdown
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options: [Chrome, Edge, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: claude
+    attributes:
+      label: Claude Code
+      options: [Available, Not installed, Not logged in, Not sure]
+  - type: input
+    id: env
+    attributes:
+      label: OS and Node version
+      placeholder: Windows 11, Node 24.1
